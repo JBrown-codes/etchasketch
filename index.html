@@ -7,25 +7,52 @@
 
 
 <body>
-  <button id="resetButton">Reset</button>
+<h1>Etch-a-Sketch!</h1>
+<div class="masterContainer">
+  <div class="controlContainer">
+    <div class="controls">
+      <button class="controlField" id="resetButton">Clear</button>
+    </div>
 
-  <label for="resolutionSelector">Resolution (4-64):</label>
-  <input type="number" min="4" max="64" id="resolutionSelector" placeholder="4-64">
+    <div class="controls">
+      <input class="controlField" type="number" min="4" max="64" id="resolutionSelector" placeholder="4-64">
+      <label class="controlLabels" for="resolutionSelector">Resolution (4-64):</label>
+    </div>
 
-  <label for="backgroundColorSelector">Background Color:</label>
-  <select id="backgroundColorSelector">
-    <option value="white">White</option>
-    <option value="black">Black</option>
-    <option value="red">Red</option>
-    <option value="orange">Orange</option>
-    <option value="yellow">Yellow</option>
-    <option value="green">Green</option>
-    <option value="blue">Blue</option>
-    <option value="purple">Purple</option>    
-  </select>
+    <div class="controls">
+      <select class="controlField" id="backgroundColorSelector">
+        <option value="white">White</option>
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="orange">Orange</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="purple">Purple</option>    
+      </select>
+      <label class="controlLabels" for="backgroundColorSelector">Background Color:</label>
+    </div>
+
+    <div class="controls">      
+      <select class="controlField" id="foregroundColorSelector">
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="red">Red</option>
+        <option value="orange">Orange</option>
+        <option value="yellow">Yellow</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="purple">Purple</option>
+        <option value="random">RANDOM!</option>
+        <option value="darken">DARKEN!</option>
+      </select>
+      <label class="controlLabels" for="foregroundColorSelector">Foreground Color:</label>
+    </div>
+
+  </div>
 
   <div class="canvasContainer" id="container"></div>
-
+</div>
   <script type="text/javascript" src="./script.js"></script>
 </body>
 

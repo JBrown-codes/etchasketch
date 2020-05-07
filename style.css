@@ -1,21 +1,78 @@
 body {
-  background-color: gray;
+  background-color: rgb(177, 177, 177);
+}
+
+h1 {
+  font-family: Arial;
+  text-align: center;
+  font-size: 3rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.masterContainer {
+  display: grid;
+  width: 1050px;
+  grid-template-columns: 280px 800px;
+  grid-template-rows: 800px;
+  position: absolute;
+  left: 50%;
+  margin-left: -680px;
+}
+
+.controlContainer {
+  display: grid;
+  grid-template-columns: 280px;
+  grid-template-rows: 2rem 2rem 2rem 2rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  font-size: 18px;
+  font-family: Arial;
+  float: left;
+  background-color: lightgray;
+  margin-top: 100px;
+  margin-bottom: 560px;
+  margin-right: .5rem;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.controlLabels {
+  float: right;
+  margin-right: .5rem;
+}
+
+.controlField {
+  float: right;
+  width: 90px;
+  height: 1.5rem;
+  font-size: 18px;
+  margin-right: 1rem;
+  font-family: Arial;
+  text-align: center;
+}
+
+#resolutionSelector {
+  width: 86px;
+  height: 1.2rem;
 }
 
 .canvasContainer {
-  background-color: white;
-  width: 600px;
-  height: 600px;
-  border: 3px solid black;
+  background-color: black;
+  width: 800px;
+  height: 800px;
+  border: 2px solid lightgray;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px black;
   display: grid;
+  margin: auto;
   /* grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(16, 1fr); */
 }
 
 .canvasPixels {
-  background-color: green;
+  background-color: white;
 }
 
 .canvasPixelsHovered {
-  background-color: blue;
+  background-color: black;
 }
