@@ -7,6 +7,22 @@
 
 
 <body>
+  <button id="resetButton">Reset</button>
+
+  <label for="resolutionSelector">Resolution (4-64):</label>
+  <input type="number" min="4" max="64" id="resolutionSelector" placeholder="4-64">
+
+  <label for="backgroundColorSelector">Background Color:</label>
+  <select id="backgroundColorSelector">
+    <option value="white">White</option>
+    <option value="black">Black</option>
+    <option value="red">Red</option>
+    <option value="orange">Orange</option>
+    <option value="yellow">Yellow</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+    <option value="purple">Purple</option>    
+  </select>
 
   <div class="canvasContainer" id="container"></div>
 
